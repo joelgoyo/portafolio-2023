@@ -11,6 +11,16 @@
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon" />
+      <!-- Favicon
+    ================================================== -->
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon-16x16.png">
+    <link rel="icon" sizes="16x16" href="assets/img/favicon.ico">
+    <link rel="manifest" href="assets/img/manifest.json">
+    <link rel="mask-icon" href="assets/img/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="theme-color" content="#ffffff">
+
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
@@ -20,6 +30,15 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet" />
+
+      <!-- Bootstrap core CSS -->
+      <link rel="stylesheet" href="assets/css/bootstrap.min.css" />
+
+      <!-- Font Awesome core CSS -->
+      <link rel="stylesheet" href="assets/css/font-awesome.min.css" />
+      
+      <!-- Custom CSS -->
+      <link rel="stylesheet" href="assets/css/style.css">
 
   <!-- =======================================================
   * Template Name: DevFolio
@@ -40,7 +59,7 @@
           <li><a class="nav-link scrollto active" href="#hero">Inicio</a></li>
           <li><a class="nav-link scrollto" href="#about">Conoceme</a></li>
           <li><a class="nav-link scrollto" href="#services">Servicios</a></li>
-          <li><a class="nav-link scrollto" href="#work">Trabajos</a></li>
+          <li><a class="nav-link scrollto" href="#works">Trabajos</a></li>
           <li><a class="nav-link scrollto" href="#history">Recorrido</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -168,7 +187,7 @@
                     </div>
                     <div class="col-6">
                       <a href="assets/docs/cv.pdf" title="CV" download target="_blank" class="btn btn-secondary btn-lg">
-                        Descargar Curriculum</a>
+                        Curriculum</a>
                     </div>
                   </div>
                 </div>
@@ -346,179 +365,298 @@
     </div>
     <!-- End Counter Section -->
 
-    <!-- ======= Portfolio Section ======= -->
-    <section id="work" class="portfolio-mf sect-pt4 route">
+    
+
+
+    <!-- Portfolio/Works section --> 
+    <section class="site-section section-works" id="works">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">TRABAJOS</h3>
-              <p class="subtitle-a">Algunos de mis trabajos finalizados</p>
-              <div class="line-mf"></div>
-            </div>
+          <h2>Trabajos</h2>
+          <p class="section-subtitle"><span>Algunos de mis trabajos finalizados</span></p>
+
+          <div class="portfolio">
+              <ul class="portfolio-sorting list-inline">
+                  <li><a href="#" class=" active" data-group="all">Todos</a></li>
+                  <li><a href="#" class="" data-group="webdesign">The Member</a></li>
+                  <li><a href="#" class="" data-group="webdev">Inkavida</a></li>
+                  <li><a href="#" class="" data-group="mobileapps">Mobile apps</a></li>
+              </ul><!-- /.portfolio-sorting  -->
+
+              <div id="grid">
+                  
+                  <!-- Portfolio item --> 
+                  <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdesign"]'>
+                      <div class="portfolio-item">
+                          <div class="portfolio-item-thumb">
+                              <img src="assets/img/trabajos/landing.png" alt="" class="img-res">
+                              <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem1">
+                                  <i class="fa fa-plus"></i>
+                              </a>
+                          </div><!-- /.portfolio-item-thumb  -->
+                          <div class="portfolio-info">
+                              <h3>PSD Template</h3>
+                              <p>Web Design</p>
+                          </div><!-- /.portfolio-info  -->
+                      </div>
+                  </div><!-- /.col-md-3  -->
+                  <!-- Portfolio item -->
+                  <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdesign"]'>
+                      <div class="portfolio-item">
+                          <div class="portfolio-item-thumb">
+                              <img src="assets/img/trabajos/dashboard.png" alt="" class="img-res">
+                              <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem2">
+                                  <i class="fa fa-plus"></i>
+                              </a>
+                          </div><!-- /.portfolio-item-thumb  -->
+                          <div class="portfolio-info">
+                              <h3>Website</h3>
+                              <p>Web Development</p>
+                          </div><!-- /.portfolio-info  -->
+                      </div>
+                  </div><!-- /.col-md-3  -->
+                  <!-- Portfolio item -->
+                  <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdesign"]'>
+                      <div class="portfolio-item">
+                          <div class="portfolio-item-thumb">
+                              <img src="assets/img/trabajos/treebinary.png" alt="" class="img-res">
+                              <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem3">
+                                  <i class="fa fa-plus"></i>
+                              </a>
+                          </div><!-- /.portfolio-item-thumb  -->
+                          <div class="portfolio-info">
+                            <h3>Website</h3>
+                            <p>Web Development</p>
+                          </div><!-- /.portfolio-info  -->
+                      </div>
+                  </div><!-- /.col-md-3  -->
+                  <!-- Portfolio item -->
+                  <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdesign"]'>
+                      <div class="portfolio-item">
+                          <div class="portfolio-item-thumb">
+                              <img src="assets/img/trabajos/paid.png" alt="" class="img-res">
+                              <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem4">
+                                  <i class="fa fa-plus"></i>
+                              </a>
+                          </div><!-- /.portfolio-item-thumb  -->
+                          <div class="portfolio-info">
+                            <h3>Website</h3>
+                            <p>Web Development</p>
+                          </div><!-- /.portfolio-info  -->
+                      </div>
+                  </div><!-- /.col-md-3  -->
+                  <!-- Portfolio item -->
+                  <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdev"]'>
+                      <div class="portfolio-item">
+                          <div class="portfolio-item-thumb">
+                              <img src="assets/img/trabajos/login.png" alt="" class="img-res">
+                              <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem5">
+                                  <i class="fa fa-plus"></i>
+                              </a>
+                          </div><!-- /.portfolio-item-thumb  -->
+                          <div class="portfolio-info">
+                            <h3>PSD Template</h3>
+                            <p>Web Design</p>
+                          </div><!-- /.portfolio-info  -->
+                      </div>
+                  </div><!-- /.col-md-3  -->
+                  <!-- Portfolio item -->
+                  <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdev"]'>
+                      <div class="portfolio-item">
+                          <div class="portfolio-item-thumb">
+                              <img src="assets/img/trabajos/dash.png" alt="" class="img-res">
+                              <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem6">
+                                  <i class="fa fa-plus"></i>
+                              </a>
+                          </div><!-- /.portfolio-item-thumb  -->
+                          <div class="portfolio-info">
+                            <h3>Website</h3>
+                            <p>Web Development</p>
+                          </div><!-- /.portfolio-info  -->
+                      </div>
+                  </div><!-- /.col-md-3  -->
+                  <!-- Portfolio item -->
+                  <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdev"]'>
+                      <div class="portfolio-item">
+                          <div class="portfolio-item-thumb">
+                              <img src="assets/img/trabajos/form.png" alt="" class="img-res">
+                              <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem7">
+                                  <i class="fa fa-plus"></i>
+                              </a>
+                          </div><!-- /.portfolio-item-thumb  -->
+                          <div class="portfolio-info">
+                            <h3>Website</h3>
+                            <p>Web Development</p>
+                          </div><!-- /.portfolio-info  -->
+                      </div>
+                  </div><!-- /.col-md-3  -->
+                  <!-- Portfolio item -->
+                  <div class="col-md-3 col-sm-4 col-xs-6" data-groups='["webdev"]'>
+                      <div class="portfolio-item">
+                          <div class="portfolio-item-thumb">
+                              <img src="assets/img/trabajos/roles.png" alt="" class="img-res">
+                              <a href="#" class="rectangle" data-toggle="modal" data-target="#portfolioItem8">
+                                  <i class="fa fa-plus"></i>
+                              </a>
+                          </div><!-- /.portfolio-item-thumb  -->
+                          <div class="portfolio-info">
+                            <h3>Website</h3>
+                            <p>Web Development</p>
+                          </div><!-- /.portfolio-info  -->
+                      </div>
+                  </div><!-- /.col-md-3  -->
+
+              </div><!-- /#grid -->
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-1.jpg" alt="" class="img-fluid" />
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Lorem impsum dolor</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> /
-                      <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="#" target="_blank" target="_blank">
-                        <span class="bi bi-box-arrow-up-right"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid" />
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Loreda Cuno Nere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> /
-                      <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="#" target="_blank">
-                        <span class="bi bi-box-arrow-up-right"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid" />
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Mavrito Lana Dere</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> /
-                      <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="#" target="_blank">
-                        <span class="bi bi-box-arrow-up-right"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid" />
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Bindo Laro Cado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> /
-                      <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="#" target="_blank">
-                        <span class="bi bi-box-arrow-up-right"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-5.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-5.jpg" alt="" class="img-fluid" />
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Lena Mado</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> /
-                      <span class="w-date">18 Sep. 2018</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="#" target="_blank">
-                        <span class="bi bi-box-arrow-up-right"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="assets/img/work-6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/work-6.jpg" alt="" class="img-fluid" />
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Studio Big Bang</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Web Design</span> /
-                      <span class="w-date">18 Sep. 2017</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="#" target="_blank">
-                        <span class="bi bi-box-arrow-up-right"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
       </div>
-    </section>
-    <!-- End Portfolio Section -->
+  </section><!-- /.section-works -->
+  <!-- End Works section --> 
+
+
+  <!-- Modals -->
+  <div id="portfolioItem1" class="modal fade fade-scale" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                <img class="img-res-modal" src="assets/img/trabajos/landing.png" alt="">
+            </div>
+            <div class="modal-body">
+                <h4 class="modal-title">Project title</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn">Visit Page</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div id="portfolioItem2" class="modal fade fade-scale" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                <img class="img-res-modal" src="assets/img/trabajos/dashboard.png" alt="">
+            </div>
+            <div class="modal-body">
+                <h4 class="modal-title">Project title</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn">Visit Page</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div id="portfolioItem3" class="modal fade fade-scale" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                <img class="img-res-modal" src="assets/img/trabajos/treebinary.png" alt="">
+            </div>
+            <div class="modal-body">
+                <h4 class="modal-title">Project title</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn">Visit Page</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div id="portfolioItem4" class="modal fade fade-scale" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                <img class="img-res-modal" src="assets/img/trabajos/paid.png" alt="">
+            </div>
+            <div class="modal-body">
+                <h4 class="modal-title">Project title</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn">Visit Page</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div id="portfolioItem5" class="modal fade fade-scale" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                <img class="img-res-modal" src="assets/img/portfolio-5.jpg" alt="">
+            </div>
+            <div class="modal-body">
+                <h4 class="modal-title">Project title</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn">Visit Page</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div id="portfolioItem6" class="modal fade fade-scale" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                <img class="img-res-modal" src="assets/img/portfolio-6.jpg" alt="">
+            </div>
+            <div class="modal-body">
+                <h4 class="modal-title">Project title</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn">Visit Page</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div id="portfolioItem7" class="modal fade fade-scale" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                <img class="img-res-modal" src="assets/img/portfolio-7.jpg" alt="">
+            </div>
+            <div class="modal-body">
+                <h4 class="modal-title">Project title</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn">Visit Page</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+<div id="portfolioItem8" class="modal fade fade-scale" role="dialog">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <a class="rectangle" data-dismiss="modal"><i class="fa fa-times"></i></a>
+                <img class="img-res-modal" src="assets/img/portfolio-8.jpg" alt="">
+            </div>
+            <div class="modal-body">
+                <h4 class="modal-title">Project title</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec commodo finibus tristique. Maecenas dignissim condimentum sem eu tincidunt. Curabitur in dui quis magna vestibulum pulvinar a ut urna. Nam pellentesque mattis urna. Aenean eget lectus sit amet turpis facilisis consectetur quis vel ante. Integer in massa ut nibh ultricies sagittis imperdiet in ante. Nam sed turpis vel ante placerat feugiat ac tempus magna. Nam aliquet ullamcorper dolor non hendrerit.</p>
+            </div>
+            <div class="modal-footer">
+                <a href="#" class="btn">Visit Page</a>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
 
     <!-- History section -->
     <section class="section-history" id="history">
@@ -553,9 +691,7 @@
               </div>
               <!-- /.timeline-heading -->
               <div class="timeline-body">
-                <div class="timeline-body-thumb">
-                  <img src="assets/img/timeline-img.jpg" class="img-res" alt="" />
-                </div>
+               
                 <!-- /.timeline-body-thumb -->
                 <p>
                   Fui programador novato de una empresa privada en caracas
@@ -567,14 +703,6 @@
             </div>
             <!-- /.timeline-panel -->
           </li>
-
-          <!-- Timeline badge -->
-          <li class="timeline-start">
-            <div class="rectangle text-black">
-              <i class="bi bi-briefcase"></i>
-            </div>
-          </li>
-          <!-- /.timeline-start -->
 
           <!-- Timeline job & description, inverted  -->
           <li class="timeline-inverted">
@@ -592,9 +720,6 @@
               </div>
               <!-- /.timeline-heading -->
               <div class="timeline-body">
-                <div class="timeline-body-thumb">
-                  <img src="assets/img/timeline-img.jpg" class="img-res" alt="" />
-                </div>
                 <!-- /.timeline-body-thumb -->
                 <p>Trabaje durante un tiempo como freelance en páginas como workana programando en lenguajes como
                   JavaScript y haciendo maquetados en HTML y CSS.
@@ -622,12 +747,9 @@
               </div>
               <!-- /.timeline-heading -->
               <div class="timeline-body">
-                <div class="timeline-body-thumb">
-                  <img src="assets/img/timeline-img.jpg" class="img-res" alt="" />
-                </div>
                 <!-- /.timeline-body-thumb -->
                 <p>En la empresa en la que estuve involucrado más tiempo trabajé en módulos de registro bases de datos e
-                  interfaces de usuario utilizando framework como angular, nest.js, typescript. también utilizamos
+                  interfaces de usuario utilizando framework como Laravel, Jquery, Vue.js, Api. también utilizamos
                   tecnologías como doker.
                 </p>
               </div>
@@ -635,6 +757,72 @@
             </div>
             <!-- /.timeline-panel -->
           </li>
+          
+
+
+             <!-- Timeline badge -->
+             <li class="timeline-start">
+              <div class="rectangle text-black">
+                <i class="bi bi-book"></i>
+              </div>
+            </li>
+            <!-- /.timeline-start -->
+
+
+                      <!-- Timeline job & description, inverted  -->
+          <li class="timeline-inverted">
+            <div class="rectangle timeline-rectangle"></div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <div class="timeline-position">
+                  <p>T.S.U en Imformatica
+                  </p>
+                </div>
+                <!-- /.timeline-position -->
+                <div class="timeline-date">
+                  <p>2019 - 2021</p>
+                </div>
+                <!-- /.timeline-date -->
+              </div>
+              <!-- /.timeline-heading -->
+              <div class="timeline-body">
+                <!-- /.timeline-body-thumb -->
+                <p>Instituto Universitario de Tecnología Antonio Ricaurte. - 2019 - 2021 <br>
+                  Tesista como técnico superior en informática a punto de terminar la carrera y al fin graduarme. retraso ocasionado por problemas mundiales "covid-19" pero en la recta final.
+                </p>
+              </div>
+              <!-- /.timeline-body -->
+            </div>
+            <!-- /.timeline-panel -->
+          </li>
+          <!-- /.timeline-inverted -->
+
+          
+
+                <!-- Timeline job & description  -->
+                <li>
+                  <div class="rectangle timeline-rectangle"></div>
+                  <div class="timeline-panel">
+                    <div class="timeline-heading">
+                      <div class="timeline-date">
+                        <p>Udemy academy - 2020 - 2023</p>
+                      </div>
+                      <!-- /.timeline-date -->
+                      <div class="timeline-position">
+                        <p>Cursante</p>
+                      </div>
+                      <!-- /.timeline-position -->
+                    </div>
+                    <!-- /.timeline-heading -->
+                    <div class="timeline-body">
+                      <!-- /.timeline-body-thumb -->
+                      <p>He tenido la oportunidad de aprender muchas cosas gracias a internet y gracias a eso tengo varios cursos de programación que estoy aprendiendo y algunos ya aprendidos en framework como laravel, ajax, react y demás.
+                      </p>
+                    </div>
+                    <!-- /.timeline-body -->
+                  </div>
+                  <!-- /.timeline-panel -->
+                </li>
 
         </ul>
         <!-- /.timeline -->
@@ -664,7 +852,7 @@
   <!-- End  Footer -->
 
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
-  <a href="https://api.whatsapp.com/send?phone=584143458292&text=hola%20quiere%20contactar%20con%20Joel." class="float"
+  <a href="https://api.whatsapp.com/send?phone=584243247703&text=hola%20quiere%20contactar%20con%20Joel." class="float"
     target="_blank">
     <i class="fa fa-whatsapp my-float"></i>
   </a>
@@ -679,6 +867,38 @@
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/typed.js/typed.umd.js"></script>
   <script src="assets/vendor/php-email-form/validate.js"></script>
+
+
+  <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <!-- jQuery core js | Do not Delete -->
+    <script src="assets/js/jquery.min.js"></script>
+
+    <!-- Bootstrap core js | Do not Delete -->
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Bootstrap progressbar JS -->
+    <script src="assets/js/bootstrap-progressbar.min.js"></script>
+
+    <!-- Count To JS -->
+    <script src="assets/js/jquery.countTo.min.js"></script>
+
+    <!-- Easing JS -->
+    <script src="assets/js/jquery.easing.min.js"></script>
+
+    <!-- Shuffle JS -->
+    <script src="assets/js/jquery.shuffle.min.js"></script>
+
+    <!-- Slick Carousel JS -->
+    <script src="assets/js/slick.min.js"></script>
+
+    <!-- Touchswipe JS -->
+    <script src="assets/js/touchswipe.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+  
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
